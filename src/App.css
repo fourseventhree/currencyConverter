@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Play, Arial;
+  font-weight: bold;
+}
+
+.mainBody {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(66, 66, 66);
+}
+
+.errorText, .loadingText {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding-top: 25px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  padding-top: 25px;
+}
+
+.currentExchangeRate {
+  width: 40%;
+  height: 100px;
+  background-color: rgb(131, 131, 131);
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1250px) {
+  .currentExchangeRate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .currentExchangeRate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 70%;
+  }
+}
+
+.euFlag {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/eu.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-right: 8px;
+}
+
+.usFlag {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/us.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-right: 8px;
+}
+
+.uaFlag {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/ua.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-left: 8px;
+}
+
+.euFlag2 {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/eu.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-left: 8px;
+}
+
+.usFlag2 {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/us.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-left: 8px;
+}
+
+.uaFlag2 {
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/ua.svg");
+  height: 18px;
+  width: 24px;
+  box-shadow: 0.5px 0.5px 10px black;
+  margin-right: 8px;
+}
+
+#usdToUah, #eurToUah {
+  display: flex;
+  margin-top: 20px;
+}
+
+#updateTime {
+  flex-basis: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px; 
+}
+
+@media screen and (max-width: 1250px) {
+  #updateTime {
+    flex-basis: auto;
+  }
+}
+
+.converter {
+  width: 50%;
+  height: 200px;
+  background-color: rgb(131, 131, 131);
+  margin: 70px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1250px) {
+  .converter {
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#fromCurrency, #toCurrency {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#replaceCurrency {
+  background: none;
+  align-self: center;
+  border: none;
+  color: white;
+  font-size: 28px;
+  outline: none;
+}
+
+#replaceCurrency:hover {
+  cursor: pointer;
+  color: rgb(211, 210, 210);
+}
+
+#replaceCurrency:active {
+  transform: scale(0.9);
+}
+
+select {
+  text-align: center;
+  border-radius: 5px;
+  width: 150px;
+  appearance: none;
+  outline: none;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+input {
+  text-align: center;
+  border-radius: 5px;
+  width: 150px;
+  border: none;
+  outline-style: none;
+  
+}
+
+.fromCurrencyInput {
+  margin-left: 32px;
+}
+
+.toCurrencyInput {
+  order: 2;
+  margin-right: 32px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+}
